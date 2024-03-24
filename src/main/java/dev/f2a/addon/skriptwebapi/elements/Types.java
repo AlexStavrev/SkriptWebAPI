@@ -10,25 +10,11 @@ import com.sun.net.httpserver.HttpExchange;
 
 public class Types {
     static {
-        Classes.registerClass(new ClassInfo<>(HttpRequest.class, "httprequest")
-                .name("httprequest")
-                .usage("Http request instance")
-                .user("httprequest")
-                .defaultExpression(new EventValueExpression<>(HttpRequest.class))
-        );
-
         Classes.registerClass(new ClassInfo<>(HttpResponse.class, "httpresponse")
                 .name("httpresponse")
                 .usage("Http response instance")
                 .user("httpresponse")
                 .defaultExpression(new EventValueExpression<>(HttpResponse.class))
-        );
-
-        Classes.registerClass(new ClassInfo<>(HttpHeaders.class, "httpheader")
-                .name("httpheader")
-                .usage("Http headers instance")
-                .user("httpheader")
-                .defaultExpression(new EventValueExpression<>(HttpHeaders.class))
         );
 
         Classes.registerClass(new ClassInfo<>(HttpExchange.class, "httpexchange")
